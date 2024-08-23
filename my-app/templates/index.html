@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ethereum App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Ethereum App</h1>
+    <div id="connect-container">
+        <button id="connectButton">Connect Wallet</button>
+    </div>
+    <div id="wallet-info" style="display: none;">
+        <h2>Wallet Information</h2>
+        <p>Address: <span id="wallet-address"></span></p>
+        <p>Balance: <span id="wallet-balance"></span> ETH</p>
+        <button id="refreshBalance">Refresh Balance</button>
+    </div>
+    <div id="transaction-form" style="display: none;">
+        <h2>Send Transaction</h2>
+        <form id="send-form">
+            <input type="text" id="recipient" placeholder="Recipient Address">
+            <input type="number" id="amount" placeholder="Amount">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
